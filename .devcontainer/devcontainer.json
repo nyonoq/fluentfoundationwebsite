@@ -1,0 +1,22 @@
+{
+  "name": "React + Java Dev",
+  "image": "mcr.microsoft.com/devcontainers/java:17",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    }
+  },
+  "forwardPorts": [5173, 8080],
+  "postCreateCommand": "cd frontend && npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscodevim.vim",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "redhat.java",
+        "vscjava.vscode-java-pack"
+      ]
+    }
+  }
+}
