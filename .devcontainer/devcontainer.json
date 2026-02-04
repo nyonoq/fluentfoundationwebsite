@@ -1,17 +1,17 @@
 {
-  "name": "React + Java Dev",
+  "name": "Fluent Foundation Dev",
   "image": "mcr.microsoft.com/devcontainers/java:17",
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
       "version": "20"
-    }
+    },
+    "ghcr.io/devcontainers/features/git-lfs:1": {}
   },
   "forwardPorts": [5173, 8080],
   "postCreateCommand": "cd frontend && npm install",
   "customizations": {
     "vscode": {
       "extensions": [
-        "vscodevim.vim",
         "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint",
         "redhat.java",
